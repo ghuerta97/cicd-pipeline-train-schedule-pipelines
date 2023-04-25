@@ -10,8 +10,7 @@ pipeline {
         }
         stage('DeployToStaging') {
             when {
-                beforeInput true
-                branch 'master'
+                branch 'example-solution'
             }
             steps {
                 script {
